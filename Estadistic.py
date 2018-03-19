@@ -7,5 +7,7 @@ class Estadistic:
     def elements(self, string):
         if string==" ":
             return 0
-        else:
+        elif string=="1":
             return 1
+        else:
+            return 2
