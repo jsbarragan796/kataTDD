@@ -17,3 +17,7 @@ class EstadisticTest(TestCase):
     def test_minElement_stringOneElement(self):
         self.assertEqual(Estadistic().minElement("1"),[1,1],"One String numbers")
         self.assertEqual(Estadistic().minElement("10"), [1, 10], "One String numbers")
+
+    def test_minElement_stringTwoElement(self):
+        self.assertEqual(Estadistic().minElement("4,2"),[1,2],"Two String numbers")
+        self.assertEqual(Estadistic().minElement("10,1200"), [1, 10], "Two String numbers")
