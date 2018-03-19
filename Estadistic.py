@@ -13,4 +13,4 @@ class Estadistic:
             numbers = np.array(string.split(",")).astype(np.int)
             return [len(numbers), min(numbers), max(numbers)]
         else:
-            return [1, int(string), int(string)]
+            return [1, int(string), int(string), int(string)]
