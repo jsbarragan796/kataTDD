@@ -11,10 +11,6 @@ class Estadistic:
             return [0, None, None, None]
         elif "," in string:
             numbers = np.array(string.split(",")).astype(np.float)
-            if numbers[0] > numbers[1]:
-                return [2, numbers[1], numbers[0], (numbers[1]+numbers[0])/2]
-            else:
-                return [2, numbers[0], numbers[1], (numbers[1] + numbers[0]) / 2]
-#           return [len(numbers), min(numbers), max(numbers)]
+            return [len(numbers), min(numbers), max(numbers), np.mean(numbers)]
         else:
             return [1, int(string), int(string), int(string)]
