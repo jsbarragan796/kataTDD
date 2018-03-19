@@ -1,4 +1,5 @@
 __author__ = 'Juan Sebastian Barragan'
+import numpy as np
 
 # Pedir al usuario los numeros en la consola
 #stringNumbers = raw_input('Type your numbers separated by commas')
@@ -17,10 +18,7 @@ class Estadistic:
         if string == " " or string == "":
             return [resp[0], None]
         elif "," in string:
-            numbers = string.split(",")
-            if(int(numbers[0])>int(numbers[1])):
-                return [resp[0],int(numbers[1])]
-            else:
-             return [resp[0],int(numbers[0])]
+            numbers = np.array(string.split(",")).astype(np.int)
+            return [resp[0],min(numbers)]
         else:
             return [resp[0],int(string)]
