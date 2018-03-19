@@ -6,7 +6,7 @@ from Estadistic import Estadistic
 
 class EstadisticTest(TestCase):
 
-    def test_minMaxElement_stringTwoElement(self):
+    def test_minMaxPromElement_stringElement(self):
         self.assertEqual(Estadistic().minMaxPromElement(" "), [0, None, None, None], "Empty string")
         self.assertEqual(Estadistic().minMaxPromElement(""), [0, None, None, None], "Empty string")
 #        self.assertEqual(Estadistic().minMaxElement("1"), [1, 1, 1], "One String numbers")
