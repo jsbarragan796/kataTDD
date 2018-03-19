@@ -6,9 +6,9 @@ from Estadistic import Estadistic
 
 class EstadisticTest(TestCase):
     def test_nElements_stringNElementos(self):
-        self.assertEqual(Estadistic().elements(" "),0,"Empty string")
-        self.assertEqual(Estadistic().elements(""), 0, "Empty string")
-        self.assertEqual(Estadistic().elements("1,1,3,2"), 4, " Four String numbers")
-        self.assertEqual(Estadistic().elements("1,1"), 2, " Two String numbers")
-        self.assertEqual(Estadistic().elements("1"), 1, " One String numbers")
-        self.assertEqual(Estadistic().elements("1,4,6,2,6,32,1"), 7, " Seven String numbers")
+        self.assertEqual(Estadistic().elements(" "),[0],"Empty string")
+        self.assertEqual(Estadistic().elements(""), [0], "Empty string")
+        self.assertEqual(Estadistic().elements("1,1,3,2"), [4], " Four String numbers")
+        self.assertEqual(Estadistic().elements("1,1"), [2], " Two String numbers")
+        self.assertEqual(Estadistic().elements("1"), [1], " One String numbers")
+        self.assertEqual(Estadistic().elements("1,4,6,2,6,32,1"), [7], " Seven String numbers")
