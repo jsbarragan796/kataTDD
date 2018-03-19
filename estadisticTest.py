@@ -18,3 +18,5 @@ class EstadisticTest(TestCase):
     def test_minMaxElement_stringNoneElement(self):
         self.assertEqual(Estadistic().minMaxElement(" "), [0, None, None], "Empty string")
         self.assertEqual(Estadistic().minMaxElement(""), [0, None, None], "Empty string")
+        self.assertEqual(Estadistic().minMaxElement("1"), [1, 1, 1], "One String numbers")
+        self.assertEqual(Estadistic().minMaxElement("10"), [1, 10, 10], "One String numbers")
