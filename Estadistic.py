@@ -15,6 +15,12 @@ class Estadistic:
     def minElement(self,string):
         resp = self.elements(string)
         if string == " " or string == "":
-            return [resp[0],None]
+            return [resp[0], None]
+        elif "," in string:
+            numbers = string.split(",")
+            if(int(numbers[0])>int(numbers[1])):
+                return [resp[0],int(numbers[1])]
+            else:
+             return [resp[0],int(numbers[0])]
         else:
             return [resp[0],int(string)]
