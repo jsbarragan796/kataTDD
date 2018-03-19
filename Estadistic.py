@@ -10,7 +10,7 @@ class Estadistic:
         if string == " " or string == "":
             return [0, None, None, None]
         elif "," in string:
-            numbers = np.array(string.split(",")).astype(np.int)
+            numbers = np.array(string.split(",")).astype(np.float)
             if numbers[0] > numbers[1]:
                 return [2, numbers[1], numbers[0], (numbers[1]+numbers[0])/2]
             else:
