@@ -5,4 +5,7 @@ __author__ = 'Juan Sebastian Barragan'
 
 class Estadistic:
     def elements(self, string):
-        return 0
+        if string==" ":
+            return 0
+        else:
+            return 1
