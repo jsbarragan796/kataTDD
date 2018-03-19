@@ -6,9 +6,9 @@ import numpy as np
 
 class Estadistic:
 
-    def minElement(self,string):
+    def minMaxElement(self,string):
         if string == " " or string == "":
-            return [0, None]
+            return [0, None, None]
         elif "," in string:
             numbers = np.array(string.split(",")).astype(np.int)
             return [len(numbers),min(numbers)]
