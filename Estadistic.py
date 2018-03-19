@@ -5,9 +5,10 @@ __author__ = 'Juan Sebastian Barragan'
 
 class Estadistic:
     def elements(self, string):
-        if string==" ":
+        if string == " " or string == "":
             return 0
-        elif string=="1":
-            return 1
+        elif "," in string:
+            numbers = string.split(",")
+            return len(numbers)
         else:
-            return 2
+            return 1
