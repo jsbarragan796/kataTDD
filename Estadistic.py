@@ -12,3 +12,5 @@ class Estadistic:
             return [len(numbers)]
         else:
             return [1]
+    def minElement(self,string):
+        return [0, None]
