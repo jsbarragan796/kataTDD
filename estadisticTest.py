@@ -2,7 +2,7 @@ from unittest import TestCase
 
 __author__ = 'Juan Sebastian Barragan'
 
-import Estadistic
+from Estadistic import Estadistic
 
 class EstadisticTest(TestCase):
     def test_nElements(self):
