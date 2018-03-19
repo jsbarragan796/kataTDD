@@ -13,4 +13,8 @@ class Estadistic:
         else:
             return [1]
     def minElement(self,string):
-        return [0, None]
+        resp = self.elements(string)
+        if string == " " or string == "":
+            return [resp[0],None]
+        else:
+            return [resp[0],int(string)]
