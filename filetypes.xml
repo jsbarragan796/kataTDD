@@ -4,7 +4,6 @@
     <extensionMap>
       <mapping pattern="activate" type="PLAIN_TEXT" />
       <mapping pattern="activare" type="PLAIN_TEXT" />
-      <mapping pattern=".env" type="PLAIN_TEXT" />
       <mapping pattern=".Python" type="Python" />
     </extensionMap>
   </component>
